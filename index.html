@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Botines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <a href="https://icons8.com/icon/47838/shopping-cart"></a>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nombreTienda">BotinesShop</div>
+        <div class="carrito">
+            <a href="">
+                <img src="https://img.icons8.com/wired/64/000000/shopping-cart.png" alt="logo Carrito"/>
+            </a>
+        </div>
+    </nav>
     <h1>Compra tus botines favoritos</h1>
-    <div class="usuario">
-        <form action="" class="formUsuario">
-            <label for="nombreUsuario">Ingresa tu nombre</label><br>
-            <input type="text" placeholder="Ingresa tu Nombre" id="nombreUsuario">
-        </form>
-        <form action="" class="formUsuario">
-            <label for="apellidUsuario">Ingresa tu apellido</label><br>
-            <input type="text" placeholder="Ingresa tu Apellido" id="apellidoUsuario">
-        </form>
-    </div>
-    <div class="usuario">
-        <p>Elegi la marca de los botines que queres comprar</p>
+    <div class="filtroMarcas">
+        <p class="textoMarca">Elegi la marca de los botines que queres comprar:</p>
         <form action="" class="marcasBotines">
             <select name="Marca" id="marcas">
                 <option value="adidas">Adidas</option>
@@ -30,7 +32,100 @@
             </select>    
         </form>
     </div>
-    <script src="main.js"></script>
-    <script src="objects.js"></script>
+    <section>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/AdidasPredator.jpg" alt="">
+            </div>
+            <h3 class="infoBotin">Adidas Predator</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/AdidasX.webp" alt="">
+            </div>
+            <h3 class="infoBotin">Adidas X</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/Adidascopa.jpg" alt="">
+            </div>
+            <h3 class="infoBotin">Adidas Copa</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/mercurialnike.jpg" alt="">
+            </div>
+            <h3 class="infoBotin">Nike Mercurial</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/tiemponike.jpg" alt="">
+            </div>
+            <h3 class="infoBotin">Nike Tiempo</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/nikephantom.jpg" alt="">
+            </div>
+            <h3 class="infoBotin">Nike Phantom</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/pumafuture.webp" alt="">
+            </div>
+            <h3 class="infoBotin">Puma Future</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/pumaultra.webp" alt="">
+            </div>
+            <h3 class="infoBotin">Puma Ultra</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/pumaking.webp" alt="">
+            </div>
+            <h3 class="infoBotin">Puma King</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/NBTekela.webp" alt="">
+            </div>
+            <h3 class="infoBotin">New Balance Tekela</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+        <div class="card_product">
+            <div class="img_container">
+                <img src="img/NB Furon.webp" alt="">
+            </div>
+            <h3 class="infoBotin">New Balance Furon</h3>
+            <p class="infoBotin">$35000</p>
+            <button class="infoBotin">Agregar al Carrito</button>
+        </div>
+    </section>
+    <footer>
+        <p>Pagina hecha por <a href="https://www.linkedin.com/in/gastonpetiti/" target="blank">Gaston Petiti</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/objects.js"></script>
 </body>
 </html>

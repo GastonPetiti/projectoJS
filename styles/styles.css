@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: #BF9270;
+}
+h1{
+    text-align: center;
+}
+section{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card_product{
+    background-color: #E3B7A0;
+    height: 20rem;
+    width: 15rem;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #FFEDDB;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.carrito{
+    margin: 0.5rem 1rem 0.5rem 0;
+    width: 2rem;
+    height: auto;
+}
+.nombreTienda{
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+.img_container{
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.filtroMarcas{
+    display: flex;
+}
+.textoMarca{
+    margin: 0 1rem 0 1rem;
+}
+.infoBotin{
+    margin-bottom: 1rem;
+}
+button{
+    font-weight: bold;
+    width: 8rem;
+    height: 10rem;
+    background-color: #BF9270;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+}
