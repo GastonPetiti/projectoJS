@@ -69,10 +69,13 @@ img{
 .infoBotin{
     margin-bottom: 1rem;
 }
+.precioBotin{
+    margin-bottom: 1rem;
+}
 button{
     font-weight: bold;
     width: 8rem;
-    height: 10rem;
+    height: 2rem;
     background-color: #BF9270;
     border-radius: 5px;
 }
