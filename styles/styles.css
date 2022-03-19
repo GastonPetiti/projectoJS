@@ -79,6 +79,24 @@ button{
     background-color: #BF9270;
     border-radius: 5px;
 }
+.tituloCarrito{
+    text-align: center;
+}
+
+.carritoCompra{
+    width: 30rem;
+    background-color:#e9d3c2 ;
+    display: flex;
+  justify-content: flex-start;
+    flex-direction: row;
+    color: #000000;
+}
+.infoBotincarrito{
+    margin: 1rem;
+}
+.precioBotinCarrtio{
+    margin: 1rem;
+}
 footer{
     display: flex;
     justify-content: center;

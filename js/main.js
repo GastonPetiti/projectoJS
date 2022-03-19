@@ -1,22 +1,45 @@
-//pidiendole al usuario que ingrese sus datos
-let usuario = prompt('ingrese su nombre y apellido');
-alert(`Bienvenido ${usuario}`)
-
-//pidiendo al usuario el precio del producto que va a comprar y en cuantas cuotas lo va a pagar
-const precioBotin = parseInt(prompt('ingrese el precio del botin que eligió') );
-let cuotas = parseInt(prompt('En cuantas cuotas lo quiere pagar?'));
-
-//avisandole al usuario cuanto seria lo que tendria q gastar dependiendo la cantidad de cuotas que eligió
-function calculoCuotas(precioBotin, cuotas){
-    let division = precioBotin / cuotas;
-    alert (`pagando en ${cuotas} cuotas el total seria ${division}`)
-}
-calculoCuotas(precioBotin, cuotas);
-
-localStorage.setItem('usuario',usuario);
-
+/*
 let persona = localStorage.getItem('usuario');
 let mostrarPersona = document.createElement('p')
     mostrarPersona.innerHTML = `<p>${persona}</p>`
 
-document.body.appendChild(mostrarPersona);
+document.body.appendChild(mostrarPersona);*/
+//obtengo la marca y modelo 
+
+
+/*let tipoBotin = document.querySelectorAll('.infoBotin')
+tipoBotin.forEach((botin)=>{
+    tipoBotin = botin.textContent;
+})
+
+
+//obtengo el precio
+let valorBotin = document.querySelectorAll('.precioBotin')
+valorBotin.forEach((precio) =>{
+    valorBotin=precio.textContent;
+})*/
+
+const carrito = document.querySelector('.carrito1')
+
+let boton = document.querySelectorAll('.btn-carrito')
+boton.forEach((obj) =>{
+    obj.addEventListener('click', sumarBotinClickeado)
+})
+
+function sumarBotinClickeado (event) {
+    const button = event.target;
+    const item = button.closest('.card_product')
+
+    const botinTitulo = item.querySelector('.infoBotin').textContent;
+    const botinPrecio = item.querySelector('.precioBotin').textContent
+
+    mostrarCarrito(botinTitulo,botinPrecio)
+}
+function mostrarCarrito (botinTitulo, botinPrecio) {
+    const viendoCarrito = document.createElement('div')
+    viendoCarrito.innerHTML = `<div class = 'carritoCompra'>
+                                <h3 class = 'infoBotincarrito'>${botinTitulo}</h3>
+                                <p class='precioBotinCarrtio'>${botinPrecio}</p>
+                                </div>`
+carrito.appendChild(viendoCarrito)
+}

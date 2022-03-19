@@ -18,16 +18,3 @@ listaBotines.push(new Botines('Nike', 'Phantom', 35000));
 listaBotines.push(new Botines('Puma','Ultra',32000));
 listaBotines.push(new Botines('New Balance','Furon',25000));
 listaBotines.push(new Botines('Puma','King',20000));
-
-
-//obtengo la marca y modelo 
-let tipoBotin = document.getElementsByClassName('infoBotin')
-
-//obtengo el precio
-let valorBotin = document.getElementsByClassName('precioBotin')
-
-//mostrando por consola
-const boton = document.addEventListener('click', enviarProducto)
-function enviarProducto (){
-    console.log(`el precio de ${tipoBotin.innerHtml} es de ${valorBotin.value} pesos`)
-}
