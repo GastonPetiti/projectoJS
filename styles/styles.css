@@ -87,8 +87,9 @@ button{
     width: 30rem;
     background-color:#e9d3c2 ;
     display: flex;
-  justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
     color: #000000;
 }
 .infoBotincarrito{
@@ -97,10 +98,31 @@ button{
 .precioBotinCarrtio{
     margin: 1rem;
 }
+.botonBorrar{
+    background-color: #ff0000;
+    margin-top: 0.5rem;
+}
+input{
+    height: 2rem;
+    width: 2rem;
+    margin-top: 0.5rem;
+}
+.confirmarCompra{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    width: 28rem;
+}
+.botonComprar{
+    background-color: #00ff6a;
+}
 footer{
     display: flex;
     justify-content: center;
 }
 footer a{
     text-decoration: none;
+}
+.carrito1{
+width: 30rem;
 }
