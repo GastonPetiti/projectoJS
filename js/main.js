@@ -52,7 +52,16 @@ function compraConfirmada (event) {
 }
 
 
+/*const inputDescuento = document.querySelector('.descuento')
+function dandoDescuento(e){
+    inputDescuento === 'descuento15'? console.log('Felicitaciones tenes un 15% de descuento'): console.log('Codigo incorrecto')
+}*/
 
+console.log('para el promp ingresar descuento15')
+
+let prueba = prompt('adivina el descuento')
+
+prueba=== 'descuento15' ? console.log('descuento del 15%') : console.log('codigo incorrecto')
 
 
 /*function acutalizarPrecio (){
