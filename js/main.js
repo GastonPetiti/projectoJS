@@ -3,7 +3,7 @@ const carrito = document.querySelector('.carrito1')
 //buscando los botones  ed cada card
 let boton = document.querySelectorAll('.btn-carrito')
 boton.forEach((obj) =>{
-    obj.addEventListener('click', sumarBotinClickeado)
+    obj.addEventListener('click',sumarBotinClickeado)
 })
 
 function sumarBotinClickeado (event) {
@@ -48,7 +48,12 @@ function borrarProducto (event) {
 function compraConfirmada (event) {
     const botonCompra =event.target
     let alerta = botonCompra.closest('.carritoCompra')
-    console.log('Compra exitosa')
+    Swal.fire({
+        title:'Compra Exitosa',
+        text:'En unos dias le estara llegando su pedido',
+        icon:'succes',
+        confirmButtonText:'✔'
+    })
 }
 
 

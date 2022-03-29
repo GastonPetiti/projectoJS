@@ -19,6 +19,11 @@ section{
     flex-wrap: wrap;
     gap: 1rem;
 }
+.containerInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card_product{
     background-color: #E3B7A0;
     height: 20rem;
