@@ -17,7 +17,7 @@ function sumarBotinClickeado (event) {
 }
 //creando y mostrando el carrito en el HTML
 function mostrarCarrito (botinTitulo, botinPrecio) {
-    const viendoCarrito = document.createElement('div')
+    let viendoCarrito = document.createElement('div')
     viendoCarrito.innerHTML = `<div class = 'carritoCompra'>
                                 <h3 class = 'infoBotincarrito'>${botinTitulo}</h3>
                                 <p class='precioBotinCarrtio'>${botinPrecio}</p>
@@ -34,6 +34,7 @@ carrito.appendChild(viendoCarrito)
 viendoCarrito.querySelector('.botonBorrar').addEventListener('click',borrarProducto)
 
 viendoCarrito.querySelector('.botonComprar').addEventListener('click',compraConfirmada)
+
 
 let botinComprado = localStorage.setItem('modelo',botinTitulo)
 
@@ -55,39 +56,3 @@ function compraConfirmada (event) {
         confirmButtonText:'✔'
     })
 }
-
-
-/*const inputDescuento = document.querySelector('.descuento')
-function dandoDescuento(e){
-    inputDescuento === 'descuento15'? console.log('Felicitaciones tenes un 15% de descuento'): console.log('Codigo incorrecto')
-}*/
-
-console.log('para el promp ingresar descuento15')
-
-let prueba = prompt('adivina el descuento')
-
-prueba=== 'descuento15' ? console.log('descuento del 15%') : console.log('codigo incorrecto')
-
-
-/*function acutalizarPrecio (){
-    acutalizarPrecio()
-    let total = 0;
-    const totalCompra = document.querySelectorAll('.totalCompra')
-    totalCompra.forEach((obj) =>{
-        botin = obj;
-       // console.log(botin)
-    })
-    //console.log(totalCompra)
-
-    const carritoCompra = document.querySelectorAll('.infoBotincarrito')
-    //console.log(carritoCompra)
-
-    let prueba2 = document.querySelector('.precioBotinCarrtio')
-    console.log(prueba2)
-
-    carritoCompra.forEach (carritoCompra =>{
-        const precioProductoSeleccionado = carritoCompra.querySelector('.precioBotinCarrtio')
-        console.log('a ver',precioProductoSeleccionado)
-    })
-    console.log(total)
-}*/
