@@ -15,12 +15,12 @@ listaBotines.push(new Botines (2,'Nike','Mercurial', 42000,15,"img/NikeMercurial
 listaBotines.push(new Botines (3,'Puma','Future', 30000,8,"img/PumaFuture.jpg"));
 listaBotines.push(new Botines (4,'New Balance','Tekela', 22000, 7,"img/NewBalanceTekela.jpg"));
 listaBotines.push(new Botines (1,'Adidas','X', 38000,13,"img/AdidasX.jpg"));
-listaBotines.push(new Botines(1,'Adidas','Copa', 33000, 11,"img/AdidasCopa.jpg"));
+listaBotines.push(new Botines(1,'Adidas','Copa', 33000, 11,"img/Adidascopa.jpg"));
 listaBotines.push(new Botines(2,'Nike','Tiempo',30000,20,"img/NikeTiempo.jpg"));
-listaBotines.push(new Botines(2,'Nike','Phantom', 35000,17,"img/NikePhantom.jpg"));
+listaBotines.push(new Botines(2,'Nike','Phantom', 35000,17,"img/nikephantom.jpg"));
 listaBotines.push(new Botines(3,'Puma','Ultra',32000,18,"img/PumaUltra.jpg"));
 listaBotines.push(new Botines(4,'New Balance','Furon',25000, 10,"img/NewBalanceFuron.jpg"));
-listaBotines.push(new Botines(3,'Puma','King',20000,5,'img/PumaKing.jpg'));
+listaBotines.push(new Botines(3,'Puma','King',20000,5,'img/pumaking.jpg'));
 
 const section = document.querySelector('.section')
 
